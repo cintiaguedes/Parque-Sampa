@@ -1,0 +1,97 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://códigos_gamer/HUD.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "apagado"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Mensagem:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "piscando"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Mensagem:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Mensagem:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="ScoreBox" type="MarginContainer" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -100.0
+margin_right = 150.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScoreBox"]
+margin_right = 250.0
+margin_bottom = 14.0
+alignment = 1
+
+[node name="Text" type="Label" parent="ScoreBox/HBoxContainer"]
+margin_left = 95.0
+margin_right = 134.0
+margin_bottom = 14.0
+text = "Score:"
+
+[node name="Score" type="Label" parent="ScoreBox/HBoxContainer"]
+margin_left = 138.0
+margin_right = 154.0
+margin_bottom = 14.0
+text = "10"
+
+[node name="Mensagem" type="Label" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.75 )
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -74.0
+margin_top = -14.0
+margin_right = 74.0
+text = "Informações do gamer."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/apagado = SubResource( 1 )
+anims/piscando = SubResource( 2 )

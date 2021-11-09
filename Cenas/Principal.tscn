@@ -1,0 +1,543 @@
+[gd_scene load_steps=78 format=2]
+
+[ext_resource path="res://Cenas/HUD.tscn" type="PackedScene" id=1]
+[ext_resource path="res://imagens/Natureza/bush32x32transparent.png" type="Texture" id=2]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Left/rivertopleft64x64transparent4.png" type="Texture" id=3]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Left/rivertopleft64x64transparent12.png" type="Texture" id=4]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Left/rivertopleft64x64transparent13.png" type="Texture" id=5]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Left/rivertopleft64x64transparent14.png" type="Texture" id=6]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Tree/tree96x96transparentanimated1.png" type="Texture" id=7]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Left/rivertopleft64x64transparent1.png" type="Texture" id=8]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Left/rivertopleft64x64transparent9.png" type="Texture" id=9]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Flower/flower32x32transparentanimated9.png" type="Texture" id=10]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Tree/tree96x96transparentanimated5.png" type="Texture" id=11]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Flower/flower32x32transparentanimated14.png" type="Texture" id=12]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Flower/flower32x32transparentanimated10.png" type="Texture" id=13]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Flower/flower32x32transparentanimated11.png" type="Texture" id=14]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Tree/tree96x96transparentanimated10.png" type="Texture" id=15]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Middle/rivertop64x64transparentanimated4.png" type="Texture" id=16]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Middle/rivertop64x64transparentanimated11.png" type="Texture" id=17]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Flower/flower32x32transparentanimated12.png" type="Texture" id=18]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Middle/rivertop64x64transparentanimated10.png" type="Texture" id=19]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Middle/rivertop64x64transparentanimated13.png" type="Texture" id=20]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Middle/rivertop64x64transparentanimated2.png" type="Texture" id=21]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Middle/rivertop64x64transparentanimated3.png" type="Texture" id=22]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Middle/rivertop64x64transparentanimated5.png" type="Texture" id=23]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Tree/tree96x96transparentanimated6.png" type="Texture" id=24]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Middle/rivertop64x64transparentanimated8.png" type="Texture" id=25]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Tree/tree96x96transparentanimated14.png" type="Texture" id=26]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Tree/tree96x96transparentanimated4.png" type="Texture" id=27]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Tree/tree96x96transparentanimated8.png" type="Texture" id=28]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Middle/rivertop64x64transparentanimated14.png" type="Texture" id=29]
+[ext_resource path="res://imagens/Natureza/grasse32x32transparent.png" type="Texture" id=30]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Tree/tree96x96transparentanimated9.png" type="Texture" id=31]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Middle/rivertop64x64transparentanimated6.png" type="Texture" id=32]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Tree/tree96x96transparentanimated13.png" type="Texture" id=33]
+[ext_resource path="res://imagens/Natureza/grassbackground1.png" type="Texture" id=34]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Tree/tree96x96transparentanimated2.png" type="Texture" id=35]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Left/rivertopleft64x64transparent3.png" type="Texture" id=36]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Middle/rivertop64x64transparentanimated1.png" type="Texture" id=37]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Flower/flower32x32transparentanimated8.png" type="Texture" id=38]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Middle/rivertop64x64transparentanimated12.png" type="Texture" id=39]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Tree/tree96x96transparentanimated3.png" type="Texture" id=40]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Middle/rivertop64x64transparentanimated7.png" type="Texture" id=41]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Middle/rivertop64x64transparentanimated9.png" type="Texture" id=42]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Tree/tree96x96transparentanimated7.png" type="Texture" id=43]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Tree/tree96x96transparentanimated12.png" type="Texture" id=44]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Tree/tree96x96transparentanimated11.png" type="Texture" id=45]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/Flower/flower32x32transparentanimated13.png" type="Texture" id=46]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Left/rivertopleft64x64transparent7.png" type="Texture" id=47]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Left/rivertopleft64x64transparent10.png" type="Texture" id=48]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Left/rivertopleft64x64transparent8.png" type="Texture" id=49]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Left/rivertopleft64x64transparent11.png" type="Texture" id=50]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Left/rivertopleft64x64transparent5.png" type="Texture" id=51]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Left/rivertopleft64x64transparent2.png" type="Texture" id=52]
+[ext_resource path="res://imagens/Natureza/AnimationFrames/River_Top_Left/rivertopleft64x64transparent6.png" type="Texture" id=53]
+[ext_resource path="res://códigos_gamer/KinematicBody2D.gd" type="Script" id=54]
+[ext_resource path="res://Música/Purple_Planet_Music_-_Two_Silly_Monkeys__1_04__90bpm.ogg" type="AudioStream" id=55]
+[ext_resource path="res://imagens/bin lixo.png" type="Texture" id=56]
+[ext_resource path="res://imagens/dogs.png" type="Texture" id=57]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 37 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 16 ), ExtResource( 23 ), ExtResource( 32 ), ExtResource( 41 ), ExtResource( 25 ), ExtResource( 42 ), ExtResource( 19 ), ExtResource( 17 ), ExtResource( 39 ), ExtResource( 20 ), ExtResource( 29 ) ],
+"loop": true,
+"name": "New Anim",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 52 ), ExtResource( 36 ), ExtResource( 3 ), ExtResource( 51 ), ExtResource( 53 ), ExtResource( 47 ), ExtResource( 49 ), ExtResource( 9 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 52 ), ExtResource( 36 ), ExtResource( 3 ), ExtResource( 51 ), ExtResource( 53 ), ExtResource( 47 ), ExtResource( 49 ), ExtResource( 9 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 38 ), ExtResource( 10 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 18 ), ExtResource( 46 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.85
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 35 ), ExtResource( 40 ), ExtResource( 27 ), ExtResource( 11 ), ExtResource( 24 ), ExtResource( 43 ), ExtResource( 28 ), ExtResource( 31 ), ExtResource( 15 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 33 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "Estático - ao vento",
+"speed": 5.0
+} ]
+
+[sub_resource type="StreamTexture" id=6]
+flags = 4
+load_path = "res://.import/trabiastudent_f.png-1bee5b463a7d9441b8ec857d957319d9.stex"
+
+[sub_resource type="Animation" id=7]
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("trabiastudent_f:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 13, 14 ]
+}
+
+[sub_resource type="Animation" id=8]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("trabiastudent_f:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 1, 2 ]
+}
+
+[sub_resource type="Animation" id=9]
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("trabiastudent_f:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 6, 7 ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("trabiastudent_f:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 7, 8, 9, 10 ]
+}
+
+[sub_resource type="Animation" id=11]
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("trabiastudent_f:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 3, 4, 5, 6 ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 0.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("trabiastudent_f:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+
+[sub_resource type="CapsuleShape2D" id=13]
+radius = 8.0
+height = 44.0
+
+[sub_resource type="Animation" id=14]
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("trabiastudent_f:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 13, 14 ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "Andando para esquerda"
+
+[sub_resource type="Animation" id=16]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("trabiastudent_f:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 1, 2 ]
+}
+
+[sub_resource type="Animation" id=17]
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("trabiastudent_f:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 6, 7 ]
+}
+
+[sub_resource type="Animation" id=18]
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("trabiastudent_f:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 7, 8, 9, 10 ]
+}
+
+[sub_resource type="Animation" id=19]
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("trabiastudent_f:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 3, 4, 5, 6 ]
+}
+
+[sub_resource type="Animation" id=20]
+length = 0.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("trabiastudent_f:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MusicPlayer2D" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 55 )
+autoplay = true
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 538.75, 361.5 )
+scale = Vector2( 2.78278, 1.89683 )
+texture = ExtResource( 34 )
+
+[node name="Elementos" type="YSort" parent="."]
+
+[node name="Lixo" type="StaticBody2D" parent="Elementos"]
+position = Vector2( 960, 120 )
+scale = Vector2( 0.146246, 0.207972 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="bin lixo" type="Sprite" parent="Elementos/Lixo"]
+position = Vector2( -54.6992, 0 )
+scale = Vector2( 0.713265, 0.440864 )
+texture = ExtResource( 56 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Elementos/Lixo"]
+position = Vector2( -54.6992, 0.000976563 )
+scale = Vector2( 0.713265, 0.440864 )
+polygon = PoolVector2Array( -183.373, -188.401, -106.68, -188.401, -106.68, -275.654, 123.399, -275.654, 123.399, -275.654, 123.399, -188.401, 200.093, -188.401, 200.093, -101.148, 200.093, 247.864, -183.373, 247.864, -183.373, -101.148 )
+
+[node name="Rio" type="StaticBody2D" parent="Elementos"]
+position = Vector2( 1120, -232 )
+rotation = 1.5708
+
+[node name="Collision Rio" type="CollisionPolygon2D" parent="Elementos/Rio"]
+position = Vector2( 588, 547.452 )
+scale = Vector2( 0.362, 0.398037 )
+polygon = PoolVector2Array( -408.84, 66.2982, 563.536, 88.3975, 585.635, -220.995, -430.939, -220.995 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Rio" type="AnimatedSprite" parent="Elementos/Rio"]
+position = Vector2( 544, 464 )
+scale = Vector2( 1.93212, 1.75 )
+frames = SubResource( 1 )
+animation = "New Anim"
+playing = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Rio2" type="AnimatedSprite" parent="Elementos/Rio"]
+position = Vector2( 669, 565.6 )
+rotation = 3.14159
+scale = Vector2( 1.93212, 1.75 )
+frames = SubResource( 1 )
+animation = "New Anim"
+frame = 13
+playing = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Rio4" type="AnimatedSprite" parent="Elementos/Rio"]
+position = Vector2( 549.953, 567.167 )
+rotation = 3.14159
+scale = Vector2( 2.11814, 1.75 )
+frames = SubResource( 1 )
+animation = "New Anim"
+frame = 12
+playing = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Rio3" type="AnimatedSprite" parent="Elementos/Rio"]
+position = Vector2( 668, 464 )
+scale = Vector2( 1.93212, 1.75 )
+frames = SubResource( 1 )
+animation = "New Anim"
+frame = 13
+playing = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Rio - borda superior" type="AnimatedSprite" parent="Elementos/Rio"]
+position = Vector2( 452.027, 464 )
+scale = Vector2( 1.1076, 1.75 )
+frames = SubResource( 2 )
+frame = 2
+playing = true
+
+[node name="Rio - borda superior2" type="AnimatedSprite" parent="Elementos/Rio"]
+position = Vector2( 455.704, 569.791 )
+scale = Vector2( 1.24003, 1.55597 )
+frames = SubResource( 2 )
+frame = 1
+playing = true
+flip_v = true
+
+[node name="Rio - borda inferior" type="AnimatedSprite" parent="Elementos/Rio"]
+position = Vector2( 768.895, 463.855 )
+scale = Vector2( 1.33945, 1.73333 )
+frames = SubResource( 3 )
+playing = true
+flip_h = true
+
+[node name="Rio - borda inferior2" type="AnimatedSprite" parent="Elementos/Rio"]
+position = Vector2( 767.489, 565.549 )
+scale = Vector2( 1.38339, 1.68852 )
+frames = SubResource( 3 )
+frame = 13
+playing = true
+flip_h = true
+flip_v = true
+
+[node name="Plantas" type="StaticBody2D" parent="Elementos"]
+
+[node name="Planta 1" type="Sprite" parent="Elementos/Plantas"]
+position = Vector2( 88, 504 )
+scale = Vector2( 3.17206, 3.31976 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Collision 1" type="CollisionPolygon2D" parent="Elementos/Plantas"]
+position = Vector2( 96, 504 )
+scale = Vector2( 0.188252, 0.227106 )
+polygon = PoolVector2Array( 127.489, -140.903, 84.9925, -105.677, 42.4963, -70.4515, 84.9925, 0.000244141, 42.4963, 35.2261, 169.985, -35.2257, 169.985, 0.000244141, 169.985, 35.2261, 127.489, 105.678, 84.9925, 70.4519, 42.4963, 105.678, 42.4963, 176.129, 42.4963, 176.129, -84.9924, 176.129, -127.489, 105.678, -169.985, 105.678, -127.489, 35.2261, -127.489, 0.000244141, -212.481, 0.000244141, -169.985, -35.2257, -127.489, -35.2257, -127.489, -70.4515, -169.985, -105.677, -127.489, -140.903, -42.4962, -140.903, 42.4963, -140.903 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Planta 2" type="Sprite" parent="Elementos/Plantas"]
+position = Vector2( 181.6, 557.6 )
+scale = Vector2( 2, 2.75 )
+texture = ExtResource( 30 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Collision 2" type="CollisionPolygon2D" parent="Elementos/Plantas"]
+position = Vector2( 181.6, 549.6 )
+scale = Vector2( 0.126809, 0.152981 )
+polygon = PoolVector2Array( 127.489, -140.903, 84.9925, -105.677, 42.4963, -70.4515, 84.9925, 0.000244141, 42.4963, 35.2261, 169.985, -35.2257, 169.985, 0.000244141, 169.985, 35.2261, 127.489, 105.678, 84.9925, 70.4519, 42.4963, 105.678, 42.4963, 176.129, 42.4963, 176.129, -84.9924, 176.129, -127.489, 105.678, -169.985, 105.678, -127.489, 35.2261, -127.489, 0.000244141, -212.481, 0.000244141, -169.985, -35.2257, -127.489, -35.2257, -127.489, -70.4515, -169.985, -105.677, -127.489, -140.903, -42.4962, -140.903, 42.4963, -140.903 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Planta 3" type="AnimatedSprite" parent="Elementos/Plantas"]
+position = Vector2( 112, 632 )
+scale = Vector2( 2.325, 2.325 )
+frames = SubResource( 4 )
+frame = 6
+playing = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Collision 3" type="CollisionPolygon2D" parent="Elementos/Plantas"]
+position = Vector2( 112, 616 )
+scale = Vector2( 0.146246, 0.207972 )
+polygon = PoolVector2Array( -54.7023, -38.467, 0, -0.000244141, 54.7024, 38.4663, 164.107, 38.4663, 164.107, 76.9331, 65.9164, 225.588, 65.9164, 225.588, 11.214, 225.588, -43.4884, 225.588, -207.595, 187.121, 0, 76.9331, -109.405, 115.4, -109.405, 76.9331, -262.298, 33.2545, -109.405, 38.4663, -164.107, -0.000244141, -152.895, -43.6799, -127.489, -70.4515 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Elementos/Plantas"]
+position = Vector2( 264, 224 )
+scale = Vector2( 2.91667, 2.66667 )
+frames = SubResource( 5 )
+animation = "Estático - ao vento"
+frame = 3
+playing = true
+
+[node name="Collision árvore" type="CollisionPolygon2D" parent="Elementos/Plantas"]
+position = Vector2( 261.326, 215.484 )
+scale = Vector2( 0.362, 0.362 )
+polygon = PoolVector2Array( -47.8627, -363.216, 62.6345, -319.017, 128.933, -208.519, 239.43, -75.9227, 169.985, -35.2257, 239.43, -31.7238, 239.43, 78.7734, 217.331, 255.569, 106.833, 366.066, 62.6345, 410.265, 40.5351, 410.265, -224.658, 321.867, -207.595, 187.121, -127.489, 105.678, -180.459, 100.873, -246.758, 100.873, -262.298, 33.2545, -290.957, 78.7734, -169.985, -35.2257, -152.895, -43.6799, -313.056, 34.5745, -268.857, -53.8233, -268.857, -164.321, -202.559, -296.917 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Izabel" type="KinematicBody2D" parent="Elementos"]
+position = Vector2( 768, 230.991 )
+script = ExtResource( 54 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="trabiastudent_f" type="Sprite" parent="Elementos/Izabel"]
+position = Vector2( -6.8497, -3.83087 )
+scale = Vector2( 2.01867, 1.78423 )
+texture = SubResource( 6 )
+hframes = 4
+vframes = 4
+frame = 13
+region_rect = Rect2( 6.25, 7.25, 125.014, 201.202 )
+
+[node name="Camera2D" type="Camera2D" parent="Elementos/Izabel"]
+
+[node name="HUD" parent="Elementos/Izabel/Camera2D" instance=ExtResource( 1 )]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Elementos/Izabel"]
+anims/Andando = SubResource( 7 )
+anims/andando = SubResource( 8 )
+anims/andando_central = SubResource( 9 )
+anims/andando_direita = SubResource( 10 )
+anims/andando_esquerda = SubResource( 11 )
+anims/parado = SubResource( 12 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Elementos/Izabel"]
+position = Vector2( -8, 0 )
+shape = SubResource( 13 )
+
+[node name="KinematicBody2D2" type="KinematicBody2D" parent="Elementos"]
+visible = false
+position = Vector2( 480, 192 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Elementos/KinematicBody2D2"]
+position = Vector2( -8, 0 )
+shape = SubResource( 13 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Elementos/KinematicBody2D2"]
+anims/Andando = SubResource( 14 )
+"anims/Andando para esquerda" = SubResource( 15 )
+anims/andando = SubResource( 16 )
+anims/andando_central = SubResource( 17 )
+anims/andando_direita = SubResource( 18 )
+anims/andando_esquerda = SubResource( 19 )
+anims/parado = SubResource( 20 )
+
+[node name="Sprite" type="Sprite" parent="Elementos/KinematicBody2D2"]
+position = Vector2( -104, 80 )
+texture = ExtResource( 57 )
+hframes = 2
+vframes = 3
+frame = 4
+region_rect = Rect2( 430, 240, 150, 60 )

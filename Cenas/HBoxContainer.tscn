@@ -1,0 +1,23 @@
+[gd_scene format=2]
+
+[node name="HBoxContainer" type="HBoxContainer"]
+margin_right = 1023.0
+margin_bottom = 79.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Texo" type="Label" parent="."]
+margin_left = 466.0
+margin_top = 32.0
+margin_right = 536.0
+margin_bottom = 46.0
+text = "Pontuação:"
+
+[node name="Pontuação" type="Label" parent="."]
+margin_left = 540.0
+margin_top = 32.0
+margin_right = 556.0
+margin_bottom = 46.0
+text = "10"

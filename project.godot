@@ -1,0 +1,137 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "DTS",
+"language": "GDScript",
+"path": "res://addons/dialogic/Localization/translation_service.gd"
+}, {
+"base": "Node",
+"class": "Dialogic",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicClass.gd"
+}, {
+"base": "Control",
+"class": "DialogicBackgroundMusic",
+"language": "GDScript",
+"path": "res://addons/dialogic/Nodes/BackgroundMusic.gd"
+}, {
+"base": "Node",
+"class": "DialogicCustomEvents",
+"language": "GDScript",
+"path": "res://addons/dialogic/Nodes/DialogicCustomEvents.gd"
+}, {
+"base": "Node",
+"class": "DialogicDefinitionsUtil",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicDefinitionsUtil.gd"
+}, {
+"base": "Node",
+"class": "DialogicParser",
+"language": "GDScript",
+"path": "res://addons/dialogic/Parser/DialogicParser.gd"
+}, {
+"base": "Reference",
+"class": "DialogicResources",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicResources.gd"
+}, {
+"base": "Reference",
+"class": "DialogicUtil",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicUtil.gd"
+}, {
+"base": "Node",
+"class": "JSONBeautifier",
+"language": "GDScript",
+"path": "res://Jogo do milhão/addons/json_beautifier/json_beautifier.gd"
+}, {
+"base": "Node",
+"class": "Persistence",
+"language": "GDScript",
+"path": "res://Jogo do milhão/addons/PersistenceNode/persistence_node.gd"
+}, {
+"base": "Node",
+"class": "QuizBase",
+"language": "GDScript",
+"path": "res://Jogo do milhão/addons/QuizNodes/QuizBase.gd"
+}, {
+"base": "QuizBase",
+"class": "QuizDynamic",
+"language": "GDScript",
+"path": "res://Jogo do milhão/addons/QuizNodes/QuizDynamic.gd"
+}, {
+"base": "QuizBase",
+"class": "QuizMultipleChoice",
+"language": "GDScript",
+"path": "res://Jogo do milhão/addons/QuizNodes/QuizMultipleChoice.gd"
+} ]
+_global_script_class_icons={
+"DTS": "",
+"Dialogic": "",
+"DialogicBackgroundMusic": "",
+"DialogicCustomEvents": "",
+"DialogicDefinitionsUtil": "",
+"DialogicParser": "",
+"DialogicResources": "",
+"DialogicUtil": "",
+"JSONBeautifier": "",
+"Persistence": "res://Jogo do milhão/addons/PersistenceNode/icon.png",
+"QuizBase": "",
+"QuizDynamic": "res://Jogo do milhão/addons/QuizNodes/QuizDynamic.png",
+"QuizMultipleChoice": "res://Jogo do milhão/addons/QuizNodes/QuizMultipleChoice.png"
+}
+
+[application]
+
+config/name="gamer_de_construção"
+run/main_scene="res://Cenas/menu.tscn"
+
+[display]
+
+window/size/width=1080
+window/size/height=720
+window/size/test_width=1080
+window/size/test_height=720
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 0,
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 2,
+"detect_3d": true,
+"flags/anisotropic": false,
+"flags/filter": true,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/invert_color": false,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"

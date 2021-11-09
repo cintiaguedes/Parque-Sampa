@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Purple_Planet_Music_-_Two_Silly_Monkeys__1_04__90bpm.ogg-35fc6d235ecacecbccf9bd65a2f061df.oggstr"
+
+[deps]
+
+source_file="res://Música/Purple_Planet_Music_-_Two_Silly_Monkeys__1_04__90bpm.ogg"
+dest_files=[ "res://.import/Purple_Planet_Music_-_Two_Silly_Monkeys__1_04__90bpm.ogg-35fc6d235ecacecbccf9bd65a2f061df.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
