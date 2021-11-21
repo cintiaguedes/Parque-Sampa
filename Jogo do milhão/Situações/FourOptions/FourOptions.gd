@@ -8,6 +8,7 @@ func _ready():
 	$FourOptions.add_alternative("72 mil m²", true) # Alternativa 2
 	$FourOptions.add_alternative("180 mil m²", false) # Alternativa 3
 	
+	
 	# Mistura as perguntas
 	$FourOptions.disarray_alternatves()
 	

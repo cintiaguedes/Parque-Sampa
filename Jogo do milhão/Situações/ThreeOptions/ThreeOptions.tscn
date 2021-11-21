@@ -4,12 +4,6 @@
 [ext_resource path="res://Jogo do milhão/addons/QuizNodes/QuizMultipleChoice.gd" type="Script" id=2]
 [ext_resource path="res://Jogo do milhão/Imagenss/Icons/QuizMultipleChoise.png" type="Texture" id=3]
 
-
-
-
-
-
-
 [node name="ThreeOptions" type="Node"]
 script = ExtResource( 1 )
 
@@ -61,8 +55,7 @@ script = ExtResource( 2 )
 __meta__ = {
 "_editor_icon": ExtResource( 3 )
 }
-debug = true
-type = 2
+
 [connection signal="pressed" from="Option1" to="." method="_on_Option1_pressed"]
 [connection signal="pressed" from="Option2" to="." method="_on_Option2_pressed"]
 [connection signal="pressed" from="Option3" to="." method="_on_Option3_pressed"]

@@ -38,35 +38,114 @@ var example_dict := {
 				"CorrectAnswers" : [2],
 				"AddPoints" : 1,
 				"AddXP" : 1
-			}
-		},
-		"SubCategory2" : {
-			"Question1" : {
+			},
+			"Question4" : {
 				"Question" : "Qual foi o ano de fundação do parque?",
 				"OpcoesdeRespostas": {
-					1 : "< 18",
-					2 : "> 18"
+					1 : "1956",
+					2 : "1994",
+					3 : "2015",
+					4 : "1"
+				},
+				"CorrectAnswers" : [2],
+				"AddPoints" : 1,
+				"AddXP" : 1
+			},
+			"Question5" : {
+				"Question" : "Quantas quadras de tênis existem no parque?",
+				"OpcoesdeRespostas": {					
+					
+					1 : "20",
+					2 : "2",
+					3 : "7",
+					4 : "15"
+				},
+				"CorrectAnswers" : [3],
+				"AddPoints" : 1,
+				"AddXP" : 1
+			}, 
+			"Question6" : {
+				"Question" : "Qual é a média de pessoas que vem ao parque nos finais de semana? E durante a semana?",
+				"OpcoesdeRespostas": {
+					
+					1 : "500 mil e 3 mil",
+					2 : "25 mil e 3 mil",
+					3 : "25 mil e 300 mil",
+					4 : "250 mil e 30 mil"
+				},
+				"CorrectAnswers" : [2],
+				"AddPoints" : 1,
+				"AddXP" : 1
+			},
+			"Question7" : {
+				"Question" : "O nome do parque é uma homenagem ao Heito Villa-Lobos. Qual é a profissão dele?",
+				"OpcoesdeRespostas": {
+					
+					1 : "Compositor",
+					2 : "Auditor",
+					3 : "Músico",
+					4 : "Vendedor"
 				},
 				"CorrectAnswers" : [1],
 				"AddPoints" : 1,
 				"AddXP" : 1
 			},
-		}
-	},
-	"Category2" : {
-		"SubCategory1" : {
-			"Question1" : {
-				"Question" : "Whats is your name?",
+			"Question8": {
+				"Question" : "Qual o tamanho da ciclovia?",
 				"OpcoesdeRespostas": {
-					1 : "Matias",
-					2 : "Miguel",
-					3 : "Carla",
-					4 : "Lorena"
+					
+					1 : "7 km",
+					2 : "40 km",
+					3 : "1 km",
+					4 : "3,5 km"
 				},
-				"CorrectAnswers" : [1],
+				"CorrectAnswers" : [4],
 				"AddPoints" : 1,
 				"AddXP" : 1
-			}
-		}
+			,
+			"Question9": {
+				"Question" : "Em que ano foi a inauguração da Biblioteca?",
+				"OpcoesdeRespostas": {
+					
+					1 : "2004",
+					2 : "1984",
+					3 : "2014",
+					4 : "1994"
+				},
+				"CorrectAnswers" : [3],
+				"AddPoints" : 1,
+				"AddXP" : 1
 	}
+}
+}
+#		"SubCategory2" : {
+#			"Question1" : {
+#				"Question" : "Qual foi o ano de fundação do parque?",
+#				"OpcoesdeRespostas": {
+#					1 : "< 18",
+#					2 : "> 18"
+#				},
+#				"CorrectAnswers" : [1],
+#				"AddPoints" : 1,
+#				"AddXP" : 1
+#			},
+#		}
+#	},
+#	"Category2" : {
+#		"SubCategory1" : {
+#			"Question1" : {
+#				"Question" : "Whats is your name?",
+#				"OpcoesdeRespostas": {
+#					1 : "Matias",
+#					2 : "Miguel",
+#					3 : "Carla",
+#					4 : "Lorena"
+#				},
+#				"CorrectAnswers" : [1],
+#				"AddPoints" : 1,
+#				"AddXP" : 1
+#			}
+#		}
+#	}
+}
 }

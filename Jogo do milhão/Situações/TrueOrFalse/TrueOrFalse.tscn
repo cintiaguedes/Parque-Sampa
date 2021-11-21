@@ -42,5 +42,6 @@ margin_left = 360.0
 margin_top = 210.0
 margin_right = 500.0
 margin_bottom = 290.0
+
 [connection signal="pressed" from="True" to="." method="_on_True_pressed"]
 [connection signal="pressed" from="False" to="." method="_on_False_pressed"]
