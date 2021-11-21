@@ -38,8 +38,32 @@ var example_dict := {
 				"CorrectAnswers" : [2],
 				"AddPoints" : 1,
 				"AddXP" : 1
+<<<<<<< Updated upstream
 			},
 			"Question4" : {
+=======
+			}
+		},
+		"Category2" : {
+		"SubCategory1" : {
+			"Question1" : {
+				"Question" : "Whats is your name?",
+				"OpcoesdeRespostas": {
+					1 : "Matias",
+					2 : "Miguel",
+					3 : "Carla",
+					4 : "Lorena"
+				},
+				"CorrectAnswers" : [1],
+				"AddPoints" : 1,
+				"AddXP" : 1
+			}
+		}
+	}
+},
+		"SubCategory2" : {
+			"Question1" : {
+>>>>>>> Stashed changes
 				"Question" : "Qual foi o ano de fundação do parque?",
 				"OpcoesdeRespostas": {
 					1 : "1956",
@@ -51,6 +75,7 @@ var example_dict := {
 				"AddPoints" : 1,
 				"AddXP" : 1
 			},
+<<<<<<< Updated upstream
 			"Question5" : {
 				"Question" : "Quantas quadras de tênis existem no parque?",
 				"OpcoesdeRespostas": {					
@@ -85,6 +110,17 @@ var example_dict := {
 					2 : "Auditor",
 					3 : "Músico",
 					4 : "Vendedor"
+=======
+		"Category2" : {
+		"SubCategory1" : {
+			"Question1" : {
+				"Question" : "Qual atividade física mais comum nos parques de São Paulo?",
+				"OpcoesdeRespostas": {
+					1 : "Corrida",
+					2 : "Natação",
+					3 : "Golf",
+					4 : "Esgrima"
+>>>>>>> Stashed changes
 				},
 				"CorrectAnswers" : [1],
 				"AddPoints" : 1,
@@ -118,6 +154,7 @@ var example_dict := {
 	}
 }
 }
+<<<<<<< Updated upstream
 #		"SubCategory2" : {
 #			"Question1" : {
 #				"Question" : "Qual foi o ano de fundação do parque?",
@@ -149,3 +186,5 @@ var example_dict := {
 #	}
 }
 }
+=======
+>>>>>>> Stashed changes
