@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 
+
 var velocidade=Vector2.ZERO
 var pontos=0;
 
@@ -21,3 +22,8 @@ func _physics_process(delta):
 	$Camera2D/HUD.Mensagem("Informações do gamer.")
 	$Camera2D/HUD.Score(vetor_entrada.x>0)	
 	move_and_slide(velocidade*100)
+
+
+
+func _on_Button_pressed():
+	pass # Replace with function body.

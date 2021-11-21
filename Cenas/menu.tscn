@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Logo - Intro - Vídeo/Sampa-Parque-Intro.ogv" type="VideoStream" id=1]
 [ext_resource path="res://imagens/Ícones de botão/botão - sair.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://imagens/Ícones de botão/Play e start - botão.png" type="Texture" id=4]
 [ext_resource path="res://códigos_gamer/Iniciar.gd" type="Script" id=5]
 [ext_resource path="res://códigos_gamer/Sair.gd" type="Script" id=6]
+[ext_resource path="res://Música/Purple_Planet_Music_-_Puzzle_Game__1_16__80bpm.ogg" type="AudioStream" id=7]
 
 [node name="menu" type="Node2D"]
 
@@ -72,6 +73,11 @@ text = "Sampa Parque Building"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -1.444
+autoplay = true
 
 [connection signal="mouse_entered" from="Iniciar" to="Iniciar" method="_on_Iniciar_mouse_entered"]
 [connection signal="mouse_exited" from="Iniciar" to="Iniciar" method="_on_Iniciar_mouse_exited"]

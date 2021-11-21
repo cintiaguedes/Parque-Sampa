@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "New Anim"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.5874
+margin_right = 1.5874
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 188.45
+margin_top = 68.0254
+margin_right = 506.45
+margin_bottom = 322.025
+__meta__ = {
+"_editor_description_": "Os parques de São Paulo devem ser cuidados por todos"
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+margin_left = 22.0
+margin_top = 20.0
+margin_right = 308.0
+margin_bottom = 156.0
+text = "Os parques públicos são os principais meios de contato com a natureza.Logo, as pessoas devem aproveitar o máximo possível sem ficar com a sensação de perca de tempo."
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Panel"]
+"anims/New Anim" = SubResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+anchor_right = 0.032
+anchor_bottom = 0.092
+margin_left = 200.26
+margin_top = 339.798
+margin_right = 256.7
+margin_bottom = 309.558
+text = "Abrir"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 399.246
+margin_top = 345.036
+margin_right = 492.246
+margin_bottom = 378.036
+text = "Fechar "
+
+[connection signal="mouse_entered" from="Button" to="." method="_on_Button_mouse_entered"]
+[connection signal="mouse_exited" from="Button2" to="." method="_on_Button2_mouse_exited"]

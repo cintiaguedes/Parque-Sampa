@@ -1,15 +1,26 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Jogo do milhão/Situações/QuizDynamic/QuizDynamic.gd" type="Script" id=1]
 [ext_resource path="res://Jogo do milhão/addons/QuizNodes/QuizDynamic.gd" type="Script" id=2]
+[ext_resource path="res://Jogo do milhão/Situações/QuizDynamic/Button.gd" type="Script" id=3]
+[ext_resource path="res://imagens/Sample (3).png" type="Texture" id=4]
 
 [node name="QuizPeristence" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 3.36353
+margin_top = -8.40894
+margin_right = 3.36353
+margin_bottom = -8.40894
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 537.882, 367.888 )
+scale = Vector2( 1.16629, 1.37488 )
+texture = ExtResource( 4 )
 
 [node name="QuizDynamic" type="Node" parent="."]
 script = ExtResource( 2 )
@@ -17,61 +28,90 @@ script = ExtResource( 2 )
 [node name="VBox" type="VBoxContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 345.755
+margin_top = -29.9594
+margin_right = -359.245
+margin_bottom = -447.959
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Question" type="Label" parent="VBox"]
-margin_top = 299.0
-margin_right = 1080.0
-margin_bottom = 313.0
+margin_top = 90.0
+margin_right = 375.0
+margin_bottom = 104.0
 size_flags_horizontal = 3
 size_flags_vertical = 6
 text = "¿Cual es la esquina de la tierra?"
 align = 1
 
 [node name="Grid" type="GridContainer" parent="VBox"]
-margin_top = 616.0
-margin_right = 1080.0
-margin_bottom = 720.0
+margin_top = 198.0
+margin_right = 375.0
+margin_bottom = 302.0
 columns = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Opt4" type="Button" parent="VBox/Grid"]
+margin_right = 185.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+size_flags_horizontal = 3
+text = "Option4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Opt1" type="Button" parent="VBox/Grid"]
-margin_right = 538.0
+margin_left = 189.0
+margin_right = 374.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 0, 50 )
 size_flags_horizontal = 3
 text = "Option1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Opt2" type="Button" parent="VBox/Grid"]
-margin_left = 542.0
-margin_right = 1080.0
-margin_bottom = 50.0
+margin_top = 54.0
+margin_right = 185.0
+margin_bottom = 104.0
 rect_min_size = Vector2( 0, 50 )
 size_flags_horizontal = 3
 text = "Option2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Opt3" type="Button" parent="VBox/Grid"]
+margin_left = 189.0
 margin_top = 54.0
-margin_right = 538.0
+margin_right = 374.0
 margin_bottom = 104.0
 rect_min_size = Vector2( 0, 50 )
 size_flags_horizontal = 3
 text = "Option3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Opt4" type="Button" parent="VBox/Grid"]
-margin_left = 542.0
-margin_top = 54.0
-margin_right = 1080.0
-margin_bottom = 104.0
-rect_min_size = Vector2( 0, 50 )
-size_flags_horizontal = 3
-text = "Option4"
+[node name="Button" type="Button" parent="."]
+margin_left = 909.267
+margin_top = 46.7348
+margin_right = 1021.27
+margin_bottom = 98.7348
+text = "Sair"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
 
+[connection signal="pressed" from="VBox/Grid/Opt4" to="." method="_on_Opt4_pressed"]
 [connection signal="pressed" from="VBox/Grid/Opt1" to="." method="_on_Opt1_pressed"]
 [connection signal="pressed" from="VBox/Grid/Opt2" to="." method="_on_Opt2_pressed"]
 [connection signal="pressed" from="VBox/Grid/Opt3" to="." method="_on_Opt3_pressed"]
-[connection signal="pressed" from="VBox/Grid/Opt4" to="." method="_on_Opt4_pressed"]
+[connection signal="mouse_exited" from="Button" to="Button" method="_on_Button_mouse_exited"]

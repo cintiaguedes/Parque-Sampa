@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=2]
+[gd_scene load_steps=89 format=2]
 
 [ext_resource path="res://Cenas/HUD.tscn" type="PackedScene" id=1]
 [ext_resource path="res://imagens/Natureza/bush32x32transparent.png" type="Texture" id=2]
@@ -57,6 +57,9 @@
 [ext_resource path="res://Música/Purple_Planet_Music_-_Two_Silly_Monkeys__1_04__90bpm.ogg" type="AudioStream" id=55]
 [ext_resource path="res://imagens/bin lixo.png" type="Texture" id=56]
 [ext_resource path="res://imagens/dogs.png" type="Texture" id=57]
+[ext_resource path="res://Cenas/Jogar.gd" type="Script" id=58]
+[ext_resource path="res://imagens/moeda.png" type="Texture" id=59]
+[ext_resource path="res://imagens/game-controller.png" type="Texture" id=60]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -299,6 +302,46 @@ tracks/0/keys = {
 "values": [ 0 ]
 }
 
+[sub_resource type="CircleShape2D" id=21]
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 59 )
+region = Rect2( 0, 0, 191, 171 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 59 )
+region = Rect2( 191, 0, 191, 171 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 59 )
+region = Rect2( 382, 0, 191, 171 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 59 )
+region = Rect2( 573, 0, 191, 171 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 59 )
+region = Rect2( 764, 0, 191, 171 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 59 )
+region = Rect2( 955, 0, 191, 171 )
+
+[sub_resource type="SpriteFrames" id=28]
+animations = [ {
+"frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
 [node name="Node2D" type="Node2D"]
 
 [node name="MusicPlayer2D" type="AudioStreamPlayer" parent="."]
@@ -346,6 +389,7 @@ position = Vector2( 544, 464 )
 scale = Vector2( 1.93212, 1.75 )
 frames = SubResource( 1 )
 animation = "New Anim"
+frame = 9
 playing = true
 __meta__ = {
 "_edit_group_": true
@@ -357,7 +401,7 @@ rotation = 3.14159
 scale = Vector2( 1.93212, 1.75 )
 frames = SubResource( 1 )
 animation = "New Anim"
-frame = 13
+frame = 8
 playing = true
 __meta__ = {
 "_edit_group_": true
@@ -369,7 +413,7 @@ rotation = 3.14159
 scale = Vector2( 2.11814, 1.75 )
 frames = SubResource( 1 )
 animation = "New Anim"
-frame = 12
+frame = 7
 playing = true
 __meta__ = {
 "_edit_group_": true
@@ -380,7 +424,7 @@ position = Vector2( 668, 464 )
 scale = Vector2( 1.93212, 1.75 )
 frames = SubResource( 1 )
 animation = "New Anim"
-frame = 13
+frame = 8
 playing = true
 __meta__ = {
 "_edit_group_": true
@@ -390,14 +434,14 @@ __meta__ = {
 position = Vector2( 452.027, 464 )
 scale = Vector2( 1.1076, 1.75 )
 frames = SubResource( 2 )
-frame = 2
+frame = 11
 playing = true
 
 [node name="Rio - borda superior2" type="AnimatedSprite" parent="Elementos/Rio"]
 position = Vector2( 455.704, 569.791 )
 scale = Vector2( 1.24003, 1.55597 )
 frames = SubResource( 2 )
-frame = 1
+frame = 10
 playing = true
 flip_v = true
 
@@ -405,6 +449,7 @@ flip_v = true
 position = Vector2( 768.895, 463.855 )
 scale = Vector2( 1.33945, 1.73333 )
 frames = SubResource( 3 )
+frame = 9
 playing = true
 flip_h = true
 
@@ -412,7 +457,7 @@ flip_h = true
 position = Vector2( 767.489, 565.549 )
 scale = Vector2( 1.38339, 1.68852 )
 frames = SubResource( 3 )
-frame = 13
+frame = 8
 playing = true
 flip_h = true
 flip_v = true
@@ -455,7 +500,6 @@ __meta__ = {
 position = Vector2( 112, 632 )
 scale = Vector2( 2.325, 2.325 )
 frames = SubResource( 4 )
-frame = 6
 playing = true
 __meta__ = {
 "_edit_group_": true
@@ -474,7 +518,7 @@ position = Vector2( 264, 224 )
 scale = Vector2( 2.91667, 2.66667 )
 frames = SubResource( 5 )
 animation = "Estático - ao vento"
-frame = 3
+frame = 12
 playing = true
 
 [node name="Collision árvore" type="CollisionPolygon2D" parent="Elementos/Plantas"]
@@ -541,3 +585,37 @@ hframes = 2
 vframes = 3
 frame = 4
 region_rect = Rect2( 430, 240, 150, 60 )
+
+[node name="Botão moeda" type="StaticBody2D" parent="Elementos"]
+position = Vector2( 61.4685, 157.825 )
+scale = Vector2( 0.53031, 0.475375 )
+
+[node name="Collision moeda" type="CollisionShape2D" parent="Elementos/Botão moeda"]
+position = Vector2( 112, 616 )
+scale = Vector2( 0.146246, 0.207972 )
+shape = SubResource( 21 )
+
+[node name="Moeda do milhão" type="AnimatedSprite" parent="Elementos/Botão moeda"]
+position = Vector2( 27.8471, -133.275 )
+frames = SubResource( 28 )
+frame = 3
+playing = true
+
+[node name="game-controller" type="Sprite" parent="Elementos"]
+position = Vector2( 998.959, 663.492 )
+scale = Vector2( 0.15135, 0.151349 )
+texture = ExtResource( 60 )
+
+[node name="Jogar" type="Button" parent="."]
+margin_left = 24.8723
+margin_top = 141.487
+margin_right = 129.873
+margin_bottom = 165.487
+text = "Jogo do Milhão"
+script = ExtResource( 58 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Jogar" to="Jogar" method="_on_Jogar_pressed"]

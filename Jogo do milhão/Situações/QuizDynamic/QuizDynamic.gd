@@ -70,3 +70,6 @@ func _on_Opt3_pressed():
 
 func _on_Opt4_pressed():
 	$QuizDynamic.is_correct(4)
+
+
+
