@@ -1,4 +1,4 @@
- # Projeto de Engajamento com Locais Públicos Locais - Sampa Park
+ # Projeto de Engajamento com Locais Públicos Locais - Sampa Parque
 
 
 Este projeto foi desenvolvido como parte do Bootcamp da Inteli, uma iniciativa voltada para o aprendizado e desenvolvimento de habilidades em tecnologia e desenvolvimento de jogos. O objetivo principal deste projeto é oferecer uma plataforma inovadora para engajar o público com os locais públicos locais em São Paulo em parceria com a Prodan, por meio de tecnologia interativa. O resultado final é um jogo interativo , desenvolvido utilizando a engine Godot, que apresenta uma série de minijogos divertidos, educativos e envolventes.
